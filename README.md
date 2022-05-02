@@ -1,5 +1,5 @@
-#'MBA Desenvolvimento Full-Stack'
+# MBA Desenvolvimento Full-Stack
 
-##- Back-End - NodeJS
-##- Front-End - React
-##- Projeto Aplicado (TCC)
+## - Back-End - NodeJS
+## - Front-End - React
+## - Projeto Aplicado (TCC)
