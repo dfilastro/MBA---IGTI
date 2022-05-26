@@ -31,3 +31,4 @@
 2022-05-26T04:09:21.802Z [store-api] error PUT  - client_id is not defined
 2022-05-26T04:09:43.760Z [store-api] error PUT  - client_id is not defined
 2022-05-26T04:10:45.408Z [store-api] error PUT  - Cannot read properties of undefined (reading '0')
+2022-05-26T04:12:08.262Z [store-api] info PUT /client - {"client_id":1,"name":"Benjamin Negro Filastro","cpf":"093432329-33","email":"bella@hotmail.com","address":"Rua Professor Paulo Galli, 137 - Santa Catarina/Brasil"}
