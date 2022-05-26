@@ -1,0 +1,33 @@
+2022-05-25T22:31:20.697Z [store-api] error POST  - Name, CPF, phone, e-mail and address are mandatory
+2022-05-25T22:31:40.874Z [store-api] error POST  - Name, CPF, phone, e-mail and address are mandatory
+2022-05-25T22:32:08.620Z [store-api] error POST  - Name, CPF, phone, e-mail and address are mandatory
+2022-05-26T02:21:01.811Z [store-api] error POST  - Name, CPF, phone, e-mail and address are mandatory
+2022-05-26T02:22:50.949Z [store-api] error POST  - Name, CPF, phone, e-mail and address are mandatory
+2022-05-26T02:23:38.017Z [store-api] error POST  - Name, CPF, phone, e-mail and address are mandatory
+2022-05-26T02:23:39.724Z [store-api] error POST  - Name, CPF, phone, e-mail and address are mandatory
+2022-05-26T02:24:02.499Z [store-api] error POST  - conn.sql is not a function
+2022-05-26T02:25:23.844Z [store-api] error POST  - INSERT has more expressions than target columns
+2022-05-26T02:25:54.421Z [store-api] info POST /client - {"name":"Diego Filastro","cpf":"050457279-23","email":"d.filastro@hotmail.com","address":"Rua Professor Paulo Galli, 137 - Santa Catarina/Brasil"}
+2022-05-26T02:30:06.056Z [store-api] info POST /client - {"name":"Diego Filastro","cpf":"050457279-23","email":"d.filastro@hotmail.com","address":"Rua Professor Paulo Galli, 137 - Santa Catarina/Brasil"}
+2022-05-26T02:34:05.664Z [store-api] info POST /client - {"name":"Gabriela Negro","cpf":"093445619-40","email":"gabenegro@hotmail.com","address":"Rua Professor Paulo Galli, 137 - Santa Catarina/Brasil"}
+2022-05-26T02:34:38.968Z [store-api] error POST  - aa
+2022-05-26T02:50:20.590Z [store-api] info GET /client
+2022-05-26T03:01:50.939Z [store-api] info GET /client/1
+2022-05-26T03:01:54.451Z [store-api] info GET /client/3
+2022-05-26T03:35:39.484Z [store-api] info DELETE /client/2
+2022-05-26T03:35:55.472Z [store-api] info GET /client
+2022-05-26T04:04:07.528Z [store-api] info POST /client - {"client_id":4,"name":"Bella Negro","cpf":"093432329-33","email":"bella@hotmail.com","address":"Rua Professor Paulo Galli, 137 - Santa Catarina/Brasil"}
+2022-05-26T04:05:20.993Z [store-api] error PUT  - client_id is not defined
+2022-05-26T04:06:15.529Z [store-api] info GET /client/2
+2022-05-26T04:06:27.222Z [store-api] error PUT  - client_id is not defined
+2022-05-26T04:06:32.307Z [store-api] error PUT  - client_id is not defined
+2022-05-26T04:06:55.617Z [store-api] info GET /client/2
+2022-05-26T04:06:59.056Z [store-api] info GET /client/1
+2022-05-26T04:07:03.388Z [store-api] info GET /client/3
+2022-05-26T04:07:07.918Z [store-api] info GET /client/4
+2022-05-26T04:07:14.278Z [store-api] info GET /client/5
+2022-05-26T04:07:35.262Z [store-api] error PUT  - client_id is not defined
+2022-05-26T04:08:38.806Z [store-api] error PUT  - client_id is not defined
+2022-05-26T04:09:21.802Z [store-api] error PUT  - client_id is not defined
+2022-05-26T04:09:43.760Z [store-api] error PUT  - client_id is not defined
+2022-05-26T04:10:45.408Z [store-api] error PUT  - Cannot read properties of undefined (reading '0')

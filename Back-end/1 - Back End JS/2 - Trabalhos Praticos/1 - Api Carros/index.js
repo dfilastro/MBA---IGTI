@@ -2,7 +2,7 @@ import express from 'express';
 import carsRoute from './routes/cars.js';
 import { promises as fs } from 'fs';
 
-const { readFile, writeFile } = fs;
+const { readFile } = fs;
 
 const app = express();
 app.use(express.json());

@@ -14,6 +14,10 @@ router.get('/maisModelos', async (_req, res, _next) => {
     let most = [];
     let numberOfMmodels = [];
 
+    // for(const b of brands){
+    //   if(b.models)
+    // }
+
     for (let i = 0; i < data.length; i++) {
       if (numberOfMmodels.length < data[i].models.length) {
         numberOfMmodels = data[i].models;
