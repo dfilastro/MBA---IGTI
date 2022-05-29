@@ -36,3 +36,4 @@
 2022-05-26T18:56:30.361Z [store-api] error POST  - Name, CNPJ, phone, e-mail and address are mandatory
 2022-05-26T18:56:40.093Z [store-api] error POST  - SupplierRepository.insertSupplier is not a function
 2022-05-26T18:58:12.346Z [store-api] info POST /supplier - {"supplier_id":1,"name":"Fornecedor 1","cnpj":"00123871/0001-22","phone":"1245234135","email":"bella@hotmail.com","address":"Rua Tiririca, 233 - Santa Catarina/Brasil"}
+2022-05-29T16:55:14.059Z [store-api] error POST  - column "suplier_id" of relation "products" does not exist
