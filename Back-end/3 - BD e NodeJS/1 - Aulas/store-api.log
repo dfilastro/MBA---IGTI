@@ -53,3 +53,31 @@
 2022-05-29T17:36:09.997Z [store-api] info POST /sale - {"sale_id":1,"value":"33000","date":"2000-01-01T02:00:00.000Z","client_id":1,"product_id":1}
 2022-05-29T17:42:28.688Z [store-api] error POST  - The informed Product or Client ID is wrong
 2022-05-29T17:42:37.601Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-05-29T18:07:03.740Z [store-api] info POST /product - {"product_id":4,"supplier_id":1,"name":"Laptop","description":"Mac Book Pro","value":"17500","stock":11}
+2022-05-29T18:07:09.067Z [store-api] info GET /product
+2022-05-29T18:07:55.463Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-05-29T18:08:04.711Z [store-api] error POST  - Cannot access 'sale' before initialization
+2022-05-29T18:09:03.650Z [store-api] info POST /sale - {"sale_id":2,"value":"33000","date":"2000-01-01T02:00:00.000Z","client_id":1,"product_id":1}
+2022-05-29T18:09:18.694Z [store-api] info POST /product - {"product_id":5,"supplier_id":1,"name":"Laptop","description":"Mac Book Pro","value":"17500","stock":11}
+2022-05-29T18:09:31.290Z [store-api] info GET /product
+2022-05-29T18:10:44.712Z [store-api] info POST /product - {"product_id":6,"supplier_id":1,"name":"Keyboard","description":"Keyboard Dell Bluetooth","value":"17500","stock":2}
+2022-05-29T18:10:58.446Z [store-api] info GET /product
+2022-05-29T18:11:05.648Z [store-api] info GET /product/6
+2022-05-29T18:11:27.107Z [store-api] info POST /sale - {"sale_id":3,"value":"550","date":"2000-01-01T02:00:00.000Z","client_id":1,"product_id":6}
+2022-05-29T18:11:32.838Z [store-api] info GET /product/6
+2022-05-29T18:11:39.474Z [store-api] info POST /sale - {"sale_id":4,"value":"550","date":"2000-01-01T02:00:00.000Z","client_id":1,"product_id":6}
+2022-05-29T18:11:42.566Z [store-api] info GET /product/6
+2022-05-29T18:11:48.513Z [store-api] error POST  - Out of Stock
+2022-05-29T18:19:44.172Z [store-api] info GET /sale
+2022-05-29T18:20:01.144Z [store-api] error DELETE  - This sale id doesn`t exist
+2022-05-29T18:20:16.708Z [store-api] info DELETE /sale/4
+2022-05-29T18:20:23.891Z [store-api] info GET /product/6
+2022-05-29T18:23:07.849Z [store-api] info GET /product
+2022-05-29T18:23:46.419Z [store-api] info PUT /product - {"product_id":1,"supplier_id":1,"name":"Laptop","description":"Mac Book Pro","value":"19000","stock":15}
+2022-05-29T18:34:04.746Z [store-api] error GET  - req is not defined
+2022-05-29T18:34:39.938Z [store-api] info GET /sale
+2022-05-29T18:35:04.545Z [store-api] error GET  - getSalesRepository is not defined
+2022-05-29T18:36:08.273Z [store-api] error GET  - column "productid" does not exist
+2022-05-29T18:37:01.603Z [store-api] error GET  - column "productid" does not exist
+2022-05-29T18:41:04.456Z [store-api] info GET /sale
+2022-05-29T18:41:10.527Z [store-api] info GET /sale
