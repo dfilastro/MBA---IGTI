@@ -22,7 +22,7 @@ async function updateOwner(owner) {
 
   try {
     const sql = `UPDATE proprietario SET nome = $1, telefone = $2 WHERE proprietario_id = $3 RETURNING *`;
-    const values = [owner.proprietario, owner.telefone];
+    const values = [owner.nome, owner.telefone, owner.proprietario_id];
     const res = await conn.query(sql, values);
     return res.rows[0];
   } catch (err) {
@@ -66,7 +66,7 @@ async function getOwner(id) {
 
   try {
     const res = await conn.query(`SELECT * FROM proprietario WHERE proprietario_id = $1`, [id]);
-    return res.row[0];
+    return res.rows[0];
   } catch (err) {
     throw err;
   } finally {
