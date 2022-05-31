@@ -36,9 +36,9 @@ async function deleteAnimal(req, res, next) {
   }
 }
 
-async function getAnimals(_req, res, next) {
+async function getAnimals(req, res, next) {
   try {
-    res.send(await AnimalService.getAnimals());
+    res.send(await AnimalService.getAnimals(req.query.proprietario_id));
   } catch (err) {
     next(err);
   }

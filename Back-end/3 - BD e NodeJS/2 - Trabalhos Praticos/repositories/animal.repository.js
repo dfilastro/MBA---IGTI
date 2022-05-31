@@ -37,7 +37,6 @@ async function deteleAnimal(id) {
   const conn = await connect();
 
   try {
-    // Block deleation if the animal has at least one animal
     await conn.query('DELETE FROM animal WHERE animal_id = $1', [id]);
   } catch (err) {
     throw err;
@@ -74,4 +73,24 @@ async function getAnimal(id) {
   }
 }
 
-export default { createAnimal, updateAnimal, deteleAnimal, getAnimals, getAnimal };
+async function getAnimalByOwnerId(ownerId) {
+  const conn = await connect();
+
+  try {
+    const res = await conn.query(`SELECT * FROM animal WHERE proprietario_id = $1`, [ownerId]);
+    return res.rows;
+  } catch (err) {
+    throw err;
+  } finally {
+    conn.release();
+  }
+}
+
+export default {
+  createAnimal,
+  updateAnimal,
+  deteleAnimal,
+  getAnimals,
+  getAnimal,
+  getAnimalByOwnerId,
+};
