@@ -81,3 +81,113 @@
 2022-05-29T18:37:01.603Z [store-api] error GET  - column "productid" does not exist
 2022-05-29T18:41:04.456Z [store-api] info GET /sale
 2022-05-29T18:41:10.527Z [store-api] info GET /sale
+2022-06-05T13:46:47.437Z [store-api] info GET /client/2
+2022-06-05T13:46:53.788Z [store-api] info GET /client
+2022-06-05T13:47:11.124Z [store-api] info GET /client/3
+2022-06-05T13:47:16.845Z [store-api] info DELETE /client/3
+2022-06-05T13:47:40.325Z [store-api] error PUT  - WHERE parameter "client_id" has invalid "undefined" value
+2022-06-05T13:47:54.454Z [store-api] error PUT  - Client ID, Name, CPF, phone, e-mail and address are mandatory
+2022-06-05T13:48:38.650Z [store-api] info PUT /client - [1]
+2022-06-05T13:49:00.186Z [store-api] info GET /client/1
+2022-06-05T13:51:21.629Z [store-api] info PUT /client - {"clientId":1,"name":"Benjamin Negro Filastro","cpf":"093432329-33","email":"bella@hotmail.com","address":"Rua Professor Paulo Galli, 137 - Santa Catarina/Brasil"}
+2022-06-05T13:51:36.201Z [store-api] info PUT /client - {"clientId":1,"name":"Benjamin Negro Filastro","cpf":"093432329-33","email":"benjamin@hotmail.com","address":"Rua Professor Paulo Galli, 137 - Santa Catarina/Brasil"}
+2022-06-05T13:54:23.635Z [store-api] info GET /supplier
+2022-06-05T13:54:49.619Z [store-api] info POST /supplier - {"supplierId":2,"name":"Fornecedor 2","cnpj":"00123871/0001-22","phone":"1245234135","email":"bella@hotmail.com","address":"Rua Tiririca, 233 - Santa Catarina/Brasil"}
+2022-06-05T13:54:53.733Z [store-api] info POST /supplier - {"supplierId":3,"name":"Fornecedor 3","cnpj":"00123871/0001-22","phone":"1245234135","email":"bella@hotmail.com","address":"Rua Tiririca, 233 - Santa Catarina/Brasil"}
+2022-06-05T13:54:58.610Z [store-api] info POST /supplier - {"supplierId":4,"name":"Fornecedor 4","cnpj":"00123871/0001-22","phone":"1245234135","email":"bella@hotmail.com","address":"Rua Tiririca, 233 - Santa Catarina/Brasil"}
+2022-06-05T13:55:03.714Z [store-api] info GET /supplier
+2022-06-05T13:55:12.772Z [store-api] info GET /supplier/5
+2022-06-05T13:55:20.518Z [store-api] info GET /supplier/3
+2022-06-05T13:55:35.487Z [store-api] info DELETE /supplier/2
+2022-06-05T13:55:39.312Z [store-api] info GET /supplier
+2022-06-05T13:56:17.743Z [store-api] error PUT  - Supplier ID, Name, CNPJ, phone, e-mail and address are mandatory
+2022-06-05T13:56:23.212Z [store-api] info GET /supplier
+2022-06-05T13:56:31.724Z [store-api] error PUT  - Supplier ID, Name, CNPJ, phone, e-mail and address are mandatory
+2022-06-05T13:57:20.083Z [store-api] info PUT /supplier - {"supplierId":3,"name":"Fornecedor 44","cnpj":"00123871/0001-22","phone":"1245234135","email":"bella@hotmail.com","address":"Rua Tiririca, 233 - Santa Catarina/Brasil"}
+2022-06-05T13:59:32.821Z [store-api] info GET /product
+2022-06-05T13:59:47.903Z [store-api] info GET /product/1
+2022-06-05T14:00:01.396Z [store-api] error DELETE  - update or delete on table "products" violates foreign key constraint "fk_products" on table "sales"
+2022-06-05T14:15:30.630Z [store-api] error GET  - connect is not a function
+2022-06-05T14:15:32.223Z [store-api] error GET  - connect is not a function
+2022-06-05T14:16:53.398Z [store-api] error POST  - Date, Value, Client ID and Product ID are mandatory
+2022-06-05T14:17:06.569Z [store-api] error POST  - notNull Violation: sales.saleId cannot be null
+2022-06-05T14:18:29.017Z [store-api] error POST  - notNull Violation: sales.saleId cannot be null
+2022-06-05T14:19:23.368Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:19:50.770Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:20:08.192Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:20:23.045Z [store-api] info GET /product
+2022-06-05T14:20:41.083Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:21:17.169Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:21:46.052Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:22:05.497Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:22:33.724Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:28:06.647Z [store-api] info GET /sale
+2022-06-05T14:30:03.873Z [store-api] error GET  - Product is not defined
+2022-06-05T14:30:07.087Z [store-api] error GET  - Product is not defined
+2022-06-05T14:30:23.489Z [store-api] info GET /sale
+2022-06-05T14:30:51.293Z [store-api] info GET /sale
+2022-06-05T14:34:25.452Z [store-api] info GET /sale
+2022-06-05T14:34:47.802Z [store-api] info GET /sale
+2022-06-05T14:35:04.041Z [store-api] info GET /sale
+2022-06-05T14:35:22.670Z [store-api] info GET /sale
+2022-06-05T14:35:35.896Z [store-api] info GET /sale
+2022-06-05T14:36:26.926Z [store-api] info GET /sale
+2022-06-05T14:38:31.574Z [store-api] info GET /sale
+2022-06-05T14:42:23.744Z [store-api] info GET /sale
+2022-06-05T14:42:33.031Z [store-api] error DELETE  - This sale id doesn`t exist
+2022-06-05T14:42:38.234Z [store-api] info GET /sale
+2022-06-05T14:44:25.216Z [store-api] info GET /sale
+2022-06-05T14:44:29.836Z [store-api] error DELETE  - This sale id doesn`t exist
+2022-06-05T14:44:34.330Z [store-api] info GET /sale
+2022-06-05T14:47:59.481Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:48:07.363Z [store-api] info GET /sale
+2022-06-05T14:48:15.215Z [store-api] error DELETE  - This sale id doesn`t exist
+2022-06-05T14:48:19.007Z [store-api] info GET /sale/1
+2022-06-05T14:48:22.619Z [store-api] info GET /sale
+2022-06-05T14:48:25.625Z [store-api] info GET /sale
+2022-06-05T14:48:49.282Z [store-api] error DELETE  - This sale id doesn`t exist
+2022-06-05T14:48:53.386Z [store-api] info GET /sale/1
+2022-06-05T14:49:09.220Z [store-api] info GET /sale
+2022-06-05T14:49:11.035Z [store-api] info GET /sale
+2022-06-05T14:49:26.135Z [store-api] info GET /sale
+2022-06-05T14:49:30.229Z [store-api] error DELETE  - This sale id doesn`t exist
+2022-06-05T14:49:40.400Z [store-api] info GET /sale
+2022-06-05T14:54:58.745Z [store-api] info GET /sale
+2022-06-05T14:55:03.329Z [store-api] error DELETE  - This sale id doesn`t exist
+2022-06-05T14:56:50.039Z [store-api] info GET /sale
+2022-06-05T14:57:38.054Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:57:44.872Z [store-api] error POST  - notNull Violation: sales.saleId cannot be null
+2022-06-05T14:57:54.201Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:58:00.875Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:58:04.815Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T14:58:11.798Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T15:00:47.486Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T15:01:09.757Z [store-api] info GET /product
+2022-06-05T15:01:17.906Z [store-api] info GET /supplier
+2022-06-05T15:01:36.767Z [store-api] info GET /client
+2022-06-05T15:01:52.734Z [store-api] error POST  - notNull Violation: sales.saleId cannot be null
+2022-06-05T15:02:51.888Z [store-api] error POST  - null value in column "sale_id" of relation "sales" violates not-null constraint
+2022-06-05T15:03:45.502Z [store-api] error POST  - notNull Violation: sale.saleId cannot be null
+2022-06-05T15:04:35.945Z [store-api] info POST /sale - {"saleId":5,"value":"1000","date":"2000-01-01","clientId":4,"productId":4}
+2022-06-05T15:04:45.875Z [store-api] info GET /sale
+2022-06-05T15:04:51.569Z [store-api] error DELETE  - This sale id doesn`t exist
+2022-06-05T15:04:55.603Z [store-api] info GET /sale
+2022-06-05T15:04:58.875Z [store-api] info GET /sale
+2022-06-05T15:05:16.559Z [store-api] info GET /sale
+2022-06-05T15:05:25.568Z [store-api] info GET /sale/5
+2022-06-05T15:05:29.953Z [store-api] info GET /sale
+2022-06-05T15:13:03.824Z [store-api] info GET /sale/5
+2022-06-05T15:13:10.368Z [store-api] info GET /sale/1
+2022-06-05T15:13:15.073Z [store-api] info GET /sale
+2022-06-05T15:13:19.838Z [store-api] info DELETE /sale/5
+2022-06-05T15:13:26.502Z [store-api] info GET /sale
+2022-06-05T15:13:34.238Z [store-api] info POST /sale - {"saleId":6,"value":"1200","date":"2000-01-01","clientId":4,"productId":4}
+2022-06-05T15:13:38.220Z [store-api] info POST /sale - {"saleId":7,"value":"1300","date":"2000-01-01","clientId":4,"productId":4}
+2022-06-05T15:13:45.017Z [store-api] error POST  - The informed Product or Client ID is wrong
+2022-06-05T15:14:04.601Z [store-api] info POST /sale - {"saleId":8,"value":"1300","date":"2000-01-01","clientId":1,"productId":5}
+2022-06-05T15:14:09.717Z [store-api] info POST /sale - {"saleId":9,"value":"1400","date":"2000-01-01","clientId":1,"productId":5}
+2022-06-05T15:14:13.142Z [store-api] info GET /sale
+2022-06-05T15:14:25.651Z [store-api] info GET /sale
+2022-06-05T15:14:31.695Z [store-api] info GET /sale
+2022-06-05T15:14:49.716Z [store-api] info DELETE /sale/6
+2022-06-05T15:14:55.015Z [store-api] info GET /sale

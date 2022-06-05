@@ -3,8 +3,8 @@ import ClientRepository from '../repositories/client.repository.js';
 import ProductRepository from '../repositories/product.repository.js';
 
 async function createSale(sale) {
-  const isThereClient = await ClientRepository.getClient(sale.client_id);
-  const isThereProduct = await ProductRepository.getProduct(sale.product_id);
+  const isThereClient = await ClientRepository.getClient(sale.clientId);
+  const isThereProduct = await ProductRepository.getProduct(sale.productId);
 
   if (!isThereClient || !isThereProduct)
     throw new Error('The informed Product or Client ID is wrong');
@@ -19,9 +19,13 @@ async function createSale(sale) {
   }
 }
 
-async function getSales(productId) {
+async function getSales(productId, supplierId) {
   if (productId) {
     return await SaleRepository.getSalesByProductId(productId);
+  }
+
+  if (supplierId) {
+    return await SaleRepository.getSalesBySupplierId(supplierId);
   }
 
   return await SaleRepository.getSales();
@@ -35,7 +39,7 @@ async function deleteSale(id) {
   const sale = await SaleRepository.getSale(id);
 
   if (sale) {
-    const product = await ProductRepository.getProduct(sale.product_id);
+    const product = await ProductRepository.getProduct(sale.productId);
     await SaleRepository.deleteSale(id);
     product.stock++;
     await ProductRepository.updateProduct(product);
@@ -45,8 +49,8 @@ async function deleteSale(id) {
 }
 
 async function updateSale(sale) {
-  const isThereClient = await ClientRepository.getClient(sale.client_id);
-  const isThereProduct = await ProductRepository.getProduct(sale.product_id);
+  const isThereClient = await ClientRepository.getClient(sale.clientId);
+  const isThereProduct = await ProductRepository.getProduct(sale.productId);
   if (!isThereClient || !isThereProduct)
     throw new Error('The informed Product or Client ID is wrong');
   return await SaleRepository.updateSale(sale);
