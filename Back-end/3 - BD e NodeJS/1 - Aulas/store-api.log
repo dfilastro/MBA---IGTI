@@ -208,3 +208,4 @@
 2022-06-06T09:21:42.096Z [store-api] info GET /product
 2022-06-06T09:41:30.795Z [store-api] info GET /product/info
 2022-06-06T09:42:03.198Z [store-api] info GET /product/info
+2022-06-06T10:23:08.888Z [store-api] info POST /product/info - {"productId":3,"category":"Computer","width":"23cm","height":"60cm","depth":"18cm","reviews":[]}
