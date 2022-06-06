@@ -191,3 +191,20 @@
 2022-06-05T15:14:31.695Z [store-api] info GET /sale
 2022-06-05T15:14:49.716Z [store-api] info DELETE /sale/6
 2022-06-05T15:14:55.015Z [store-api] info GET /sale
+2022-06-05T19:26:00.160Z [store-api] error POST  - ProductService.createProductInfo is not a function
+2022-06-05T19:26:39.267Z [store-api] info POST /product/info - {"productId":3,"category":"Computer","width":"23cm","height":"60cm","depth":"18cm","reviews":[],"_id":"629d036f24eccac8cf973e86"}
+2022-06-05T19:36:19.600Z [store-api] info PUT /product/info - {"productId":3,"category":"Hand Computer","width":"23cm","height":"60cm","depth":"18cm","reviews":[]}
+2022-06-05T19:37:05.206Z [store-api] info PUT /product/info - {"productId":3,"category":"Hand Computer","width":"23cm","height":"60cm","depth":"18cm","reviews":[]}
+2022-06-06T08:26:57.175Z [store-api] info GET /product/1
+2022-06-06T08:27:58.892Z [store-api] info GET /product/1
+2022-06-06T08:31:15.200Z [store-api] info GET /product/3
+2022-06-06T08:45:40.398Z [store-api] info GET /product/3
+2022-06-06T09:00:11.316Z [store-api] error POST  - client is not defined
+2022-06-06T09:15:03.104Z [store-api] info GET /supplier
+2022-06-06T09:15:38.735Z [store-api] info GET /product/3
+2022-06-06T09:15:43.247Z [store-api] error GET  - Cannot set properties of null (setting 'info')
+2022-06-06T09:15:48.109Z [store-api] info GET /product/1
+2022-06-06T09:16:00.414Z [store-api] info GET /product
+2022-06-06T09:21:42.096Z [store-api] info GET /product
+2022-06-06T09:41:30.795Z [store-api] info GET /product/info
+2022-06-06T09:42:03.198Z [store-api] info GET /product/info
