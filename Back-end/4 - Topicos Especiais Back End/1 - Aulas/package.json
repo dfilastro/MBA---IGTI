@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "lint": "eslint src/** test/** --fix",
+    "watch": "jest --watch"
   },
   "author": "",
   "license": "ISC",
@@ -15,6 +17,11 @@
     "@babel/preset-env": "^7.18.2",
     "babel-jest": "^28.1.1",
     "babel-plugin-transform-es2015-modules-commonjs": "^6.26.2",
+    "eslint": "^8.17.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.2",
+    "eslint-plugin-promise": "^6.0.0",
     "jest": "^28.1.1"
   },
   "dependencies": {
