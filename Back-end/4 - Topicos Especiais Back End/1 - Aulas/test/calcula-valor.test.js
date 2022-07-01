@@ -12,14 +12,14 @@ describe('Calc future value', () => {
   test('Calc value with 4 payments', () => {
     const amount = calcValue(500, 0.025, 4);
 
-    expect(amount).toBe(538.45);
+    expect(amount).toBe(538.44);
   });
 });
 
 describe('Rounded number function', () => {
   test('Round a number with 2 decimal places', () => {
     const number = roundedNumber(538.4453124999998);
-    expect(number).toBe(538.45);
+    expect(number).toBe(538.44);
   });
 
   // test('Another test with rounded number', () => {
