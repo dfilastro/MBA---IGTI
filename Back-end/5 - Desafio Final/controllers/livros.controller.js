@@ -49,4 +49,44 @@ async function getBook(req, res, next) {
   }
 }
 
-export default { createBook, updateBook, deleteBook, getBooks, getBook };
+async function createBookInfo(req, res, next) {
+  try {
+    let bookInfo = req.body;
+    if (!bookInfo.livroId) throw new Error('Livro ID é obrigatório');
+    await BookService.createBookInfo(bookInfo);
+    res.end();
+  } catch (e) {
+    next(e);
+  }
+}
+
+async function updateBookInfo(req, res, next) {
+  try {
+    let bookInfo = req.body;
+    if (!bookInfo.livroId) throw new Error('Livro ID é obrigatório');
+    await BookService.updateBookInfo(bookInfo);
+    res.end();
+  } catch (e) {
+    next(e);
+  }
+}
+
+async function deleteBookInfo(req, res, next) {
+  try {
+    await BookService.deleteBookInfo(req.params.id);
+    res.send();
+  } catch (e) {
+    next(e);
+  }
+}
+
+export default {
+  createBook,
+  updateBook,
+  deleteBook,
+  getBooks,
+  getBook,
+  createBookInfo,
+  updateBookInfo,
+  deleteBookInfo,
+};

@@ -5,4 +5,4 @@ function getLivros() {
   return new mongodb.MongoClient(uri);
 }
 
-return { getLivros };
+export { getLivros };
