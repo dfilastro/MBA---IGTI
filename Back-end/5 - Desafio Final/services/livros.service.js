@@ -28,7 +28,9 @@ async function getBooks(authorId) {
 
 // 5 Consultar um livro específico
 async function getBook(bookId) {
-  return await BooksRepository.getBook(bookId);
+  const book = await BooksRepository.getBook(bookId);
+  book.info = await BookInfoRepository.getBookInfo(parseInt(bookId));
+  return book;
 }
 
 async function createBookInfo(bookInfo) {
@@ -43,6 +45,14 @@ async function deleteBookInfo(bookId) {
   await BookInfoRepository.deleteBookInfo(bookId);
 }
 
+// async function getBookInfo(bookId) {
+//   await BookInfoRepository.getBookInfo(bookId);
+// }
+
+async function createReview(review, bookId) {
+  await BookInfoRepository.createReview(review, bookId);
+}
+
 export default {
   createBook,
   updateBook,
@@ -52,4 +62,5 @@ export default {
   createBookInfo,
   updateBookInfo,
   deleteBookInfo,
+  createReview,
 };

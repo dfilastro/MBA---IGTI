@@ -11,5 +11,6 @@ router.get('/:id', BookController.getBook);
 router.post('/info', BookController.createBookInfo);
 router.put('/info', BookController.updateBookInfo);
 router.delete('/info/:id', BookController.deleteBookInfo);
+router.post('/review', BookController.createReview);
 
 export default router;

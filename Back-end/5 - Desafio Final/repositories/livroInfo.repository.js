@@ -51,4 +51,29 @@ async function deleteBookInfo(id) {
   }
 }
 
-export default { createLivroInfo, updateBookInfo, deleteBookInfo };
+async function getBookInfo(id) {
+  const livro = getLivros();
+
+  try {
+    await livro.connect();
+    return await livro.db('livraria').collection('livroInfo').findOne({
+      livroId: id,
+    });
+  } catch (e) {
+    throw e;
+  } finally {
+    await livro.close();
+  }
+}
+
+async function createReview(review, id) {
+  try {
+    const bookInfo = await getBookInfo(id);
+    bookInfo.reviews.push(review);
+    await updateBookInfo(bookInfo);
+  } catch (e) {
+    throw e;
+  }
+}
+
+export default { createLivroInfo, updateBookInfo, deleteBookInfo, getBookInfo, createReview };

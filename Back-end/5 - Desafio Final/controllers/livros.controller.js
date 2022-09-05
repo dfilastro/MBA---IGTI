@@ -80,6 +80,27 @@ async function deleteBookInfo(req, res, next) {
   }
 }
 
+// async function getBookInfo(_req, res, next) {
+//   try {
+//     await BookService.getBookInfo();
+//     res.send();
+//   } catch (e) {
+//     next(e);
+//   }
+// }
+
+async function createReview(req, res, next) {
+  try {
+    let params = req.body;
+    if (!params.livroId || !params.review) throw new Error('Book ID e Review são obrigatórios');
+
+    await BookService.createReview(params.bookId, params.review);
+    res.end();
+  } catch (e) {
+    next(e);
+  }
+}
+
 export default {
   createBook,
   updateBook,
@@ -89,4 +110,5 @@ export default {
   createBookInfo,
   updateBookInfo,
   deleteBookInfo,
+  createReview,
 };

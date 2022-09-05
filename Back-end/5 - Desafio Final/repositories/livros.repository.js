@@ -47,7 +47,7 @@ async function getBooks(id) {
 // 5 Consultar um livro específico
 async function getBook(id) {
   try {
-    return await Livros.findByPk(id);
+    return await Livros.findByPk(id, { raw: true });
   } catch (e) {
     throw e;
   }
