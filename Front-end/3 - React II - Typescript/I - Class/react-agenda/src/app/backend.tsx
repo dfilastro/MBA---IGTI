@@ -17,7 +17,9 @@ export async function getCalendarEndPoint() {
   return resp.json();
 }
 
-export async function getEventsEndPoint() {
-  const resp = await fetch('http://localhost:8080/events');
+export async function getEventsEndPoint(from: string, to: string): Promise<IEvent[]> {
+  const resp = await fetch(
+    `http://localhost:8080/events?date_gte=${from}&date_lte=${to}&_sort=date,time`
+  );
   return resp.json();
 }

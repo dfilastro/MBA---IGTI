@@ -11,6 +11,8 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 import Checkbox from '@mui/material/Checkbox';
 import Icon from '@mui/material/Icon';
 import Avatar from '@mui/material/Avatar';
+import { useEffect, useState } from 'react';
+import { getEventsEndPoint, IEvent } from './backend';
 
 const DAYS_OF_WEEK = ['DOM', 'SEG', 'TER', 'QUA', 'QUI', 'SEX', 'SAB'];
 
@@ -20,7 +22,14 @@ const tableStyling = {
 };
 
 export function CalendarScreen() {
-  const weeks = generateCalendar(getToday());
+  const [events, setEvents] = useState<IEvent[]>([]);
+  const weeks = generateCalendar(getToday(), events);
+  const firstDay = weeks[0][0].date;
+  const lastDay = weeks[weeks.length - 1][6].date;
+
+  useEffect(() => {
+    getEventsEndPoint(firstDay, lastDay).then(setEvents);
+  }, [firstDay, lastDay]);
 
   return (
     <Box display='flex'>
@@ -68,13 +77,15 @@ export function CalendarScreen() {
               ))}
             </TableRow>
           </TableHead>
-
           <TableBody>
             {weeks.map((week, i) => (
               <TableRow key={i}>
                 {week.map((day) => (
                   <TableCell align='center' key={day.date}>
                     {day.date}
+                    {day.events.map((e) => (
+                      <div>{e}</div>
+                    ))}
                   </TableCell>
                 ))}
               </TableRow>
@@ -88,9 +99,10 @@ export function CalendarScreen() {
 
 interface ICalendar {
   date: string;
+  events: [];
 }
 
-function generateCalendar(date: string): ICalendar[][] {
+function generateCalendar(date: string, allEvents: IEvent[]): ICalendar[][] {
   const weeks: ICalendar[][] = [];
   const jsDate = new Date(date + 'T12:00:00');
   const currentMonth = jsDate.getMonth();
@@ -107,7 +119,7 @@ function generateCalendar(date: string): ICalendar[][] {
       const isoDate = `${firstCalendarDay.getFullYear()}-${(firstCalendarDay.getMonth() + 1)
         .toString()
         .padStart(2, '0')}-${firstCalendarDay.getDate().toString().padStart(2, '0')}`;
-      week.push({ date: isoDate });
+      week.push({ date: isoDate, events: allEvents.filter((e) => e.date === isoDate) });
       firstCalendarDay.setDate(firstCalendarDay.getDate() + 1);
     }
     weeks.push(week);
