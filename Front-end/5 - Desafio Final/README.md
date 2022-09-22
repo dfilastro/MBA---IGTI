@@ -33,7 +33,7 @@ This project was made using the follow technologies:
 
 ```bash
 # Clone Repository
-$ git clone https://github.com/dfilastro/teste-teamsoft.git
+$ git clone https://github.com/dfilastro/MBA-Full-Stack-IGTI.git
 ```
 
 ```bash
